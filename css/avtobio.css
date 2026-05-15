@@ -1,0 +1,824 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+    background-color: rgb(255, 241, 196);
+}
+
+.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+nav {
+    background: grey;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    color: white;
+}
+
+p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+header img {
+    width: 500px;
+    height: 400px;
+    border: 5px solid;
+    border-radius: 3%;
+}
+
+section ul {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+.nav:hover {
+    color: white;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 7rem 3rem 4rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+}
+
+.text p {
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+}
+
+.text {
+    width: 400px;
+    height: 400px;
+    float: left;
+    position: relative;
+    margin-top: 20px;
+}
+
+.hoverr {
+    width: 300px;
+    height: 300px;
+    border: 5px solid;
+    position: absolute;
+    transition: opacity 0.5s ease;
+}
+
+.hoverr:hover {
+    opacity: 0%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin: 0.5rem auto;
+    display: block;
+}
+
+.card p {
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+    color: #666;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%; 
+}
+
+label img {
+    border: 10px solid palevioletred;
+    border-radius: 3%;
+    height: 400px;
+}
+
+table caption {
+    border-top: 5px solid orange;
+    border-left: 5px solid orange;
+    border-right: 5px solid orange;
+    font-size: 35px;
+}
+
+table td {
+    padding: 10px;
+    border: 5px solid orange;
+    font-size: 25px;
+}
+
+table img {
+    width: 300px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-description {
+    font-size: 18px;
+    color: rgb(100, 100, 100);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(80, 79, 79);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid rgb(170, 182, 190);
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    /* font-family удален, наследуется от body */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: rgb(80, 79, 79);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(170, 182, 190);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgb(80, 79, 79);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+footer {
+    background-color: grey;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    min-height: 60px;
+    z-index: 100;
+    bottom: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 16px;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 0.5rem 2vw;
+        background: grey;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 0.3rem;
+        padding: 0.5rem 0;
+        background: transparent;
+        border-radius: 0;
+        margin-top: 0;
+    }
+
+    nav a {
+        color: white;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    ul p {
+        font-size: 20px;
+    }
+
+    nav a:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+
+    p {
+        max-width: 1024px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 6rem 2rem 3rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    table {
+        font-size: 0.95rem;
+    }
+
+    th,
+    td {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 0;
+        font-size: 0.8rem;
+    }
+
+    .calc-inputs {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .calculator {
+        padding: 16px;
+        max-width: 100%;
+    }
+    
+    .calc-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #api-table .search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #github-user-input,
+    #load-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 0.5rem;
+        position: absolute;
+        left: 3rem;
+        top: 0;
+        z-index: 100;
+    }
+
+    .menu-icon span {
+        width: 25px;
+        height: 1px;
+        background-color: white;
+        margin: 2px 0;
+        transition: 0.3s;
+        border-radius: 2px;
+    }
+
+    nav {
+        background-color: grey;
+        padding: 1rem;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        gap: 0.1rem;
+        margin-top: 0.1rem;
+        padding: 0.3rem;
+        background-color: grey;
+        border-radius: 0;
+    }
+
+    #menu-toggle:checked~ul {
+        display: flex;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+        padding: 0.2rem 0.5rem;
+        display: block;
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    .container {
+        width: 95%;
+        padding: 5rem 1rem 2rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 0.2rem;
+        font-size: 0.7rem;
+        min-height: auto;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .calc-inputs {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .calculator {
+        padding: 16px;
+        max-width: 100%;
+    }
+    
+    .calc-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #api-table .search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #github-user-input,
+    #load-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.greeting-box {
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: palevioletred;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stats-window {
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    background-color: #667eea;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.stats-window h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.stats-window p {
+    margin: 5px 0;
+}
+
+.stats-window button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.calculator {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.calc-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.calc-result {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.calc-result label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.expression-display {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.result-display {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    min-height: 40px;
+}
+
+.calc-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.calc-btn {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.calculate-btn {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.calculate-btn:hover {
+    background-color: #357abd;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.clear-btn {
+    background-color: #ff4444;
+    color: white;
+}
+
+.clear-btn:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 68, 68, 0.3);
+}
+
+.search-container {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#skills-search {
+    width: 100%;
+    max-width: 600px;
+    padding: 18px 25px;
+    font-size: 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    color: #333;
+}
+
+#skills-search:hover {
+    border-color: #ccc;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#skills-search:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.2);
+    transform: translateY(-2px);
+}
+
+#skills-search::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.data-table th,
+.data-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.data-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+}
+
+.data-table th:hover {
+    background-color: #e9ecef;
+}
+
+.data-table tr:hover {
+    background-color: #f1f7ff;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#api-table .search-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+#github-user-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 18px 25px;
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    color: #333;
+}
+
+#github-user-input:hover {
+    border-color: #ccc;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#github-user-input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.2);
+    transform: translateY(-2px);
+}
+
+#github-user-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+#load-btn {
+    padding: 18px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+}
+
+#load-btn:hover {
+    background-color: #357abd;
+    box-shadow: 0 6px 15px rgba(74, 144, 226, 0.4);
+    transform: translateY(-2px);
+}
+
+#load-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(74, 144, 226, 0.3);
+}

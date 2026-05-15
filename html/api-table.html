@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/avtobio.css">
+    <title>GitHub Репозитории</title>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <div class="container">
+        <h1>Мои GitHub Репозитории</h1>
+        <p>Введите имя пользователя GitHub ниже, чтобы загрузить список его проектов.</p>
+        
+        
+        <div class="search-container" >
+            <input type="text" id="github-user-input" placeholder="Введите username (например, zuba)" value="zuba">
+            <button id="load-btn">Загрузить</button>
+        </div>
+
+    
+        <div class="table-wrapper">
+            <table id="users-table" class="data-table">
+                <thead>
+                    <tr>
+                        <th data-sort="name">Название ↕</th>
+                        <th data-sort="description">Описание ↕</th>
+                        <th data-sort="language">Язык ↕</th>
+                        <th data-sort="stargazers_count">Звезды ↕</th>
+                        <th data-sort="updated_at">Обновлен ↕</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="5">Введите имя пользователя и нажмите "Загрузить"</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <p id="error-message"></p>
+    </div>
+
+    <div id="footer-container"></div>
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>
