@@ -1,31 +1,12 @@
 
 
 export const NAVIGATION_LINKS = [
-    {
-        title: "Главная",
-        href: "./index.html" 
-    },
-    {
-        title: "Мои увлечения",
-        href: "./html/hobbi.html" 
-    },
-    {
-        title: "Спорт",
-        href: "./html/sport.html",
-        target: "_blank"
-    },
-    {
-        title: "Работа",
-        href: "./html/work.html"
-    },
-    {
-        title: "Контакты",
-        href: "./html/contackts.html"
-    },
-    {
-        title: "API Таблица",
-        href: "./html/api-table.html"
-    }
+    { title: "Главная", href: "./index.html" },
+    { title: "Мои увлечения", href: "./hobbi.html" },
+    { title: "Спорт", href: "./sport.html", target: "_blank" },
+    { title: "Работа", href: "./work.html" },
+    { title: "Контакты", href: "./contackts.html" },
+    { title: "API Таблица", href: "./api-table.html" }
 ];
 
 export const FOOTER_INFO = {
