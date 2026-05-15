@@ -26,7 +26,7 @@ export const SKILLS = [
     {
         id: 1,
         title: "Репетитор",
-        image: "./img/images (1).png",
+        image: "./img/images-1.png",
         experience: "2 года",
         level: "😄",
         tags: ["образование", "математика"] 
