@@ -24,17 +24,17 @@ export class SportTable {
 
         const tableData = [
             {
-                image: '../img/tyag.jpg',
+                image: './img/tyag.jpg',
                 alt: 'Тяга',
                 description: 'На данном фото моя рекордная становая, по лицу видно, легко пошла 187,5кг'
             },
             {
-                image: '../img/moto.jpg',
+                image: './img/moto.jpg',
                 alt: 'Мотокросс',
                 description: 'На этой фотке была тренировка в лесу с моим отцом'
             },
             {
-                image: '../img/footbol.jpg',
+                image: './img/footbol.jpg',
                 alt: 'Футбол',
                 description: 'На этой фотке одни из первых соревнований по футболу'
             }
