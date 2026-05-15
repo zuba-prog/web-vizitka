@@ -3,31 +3,28 @@
 export const NAVIGATION_LINKS = [
     {
         title: "Главная",
-        href: "index.html"
-                 
+        href: "./index.html" 
     },
     {
         title: "Мои увлечения",
-        href: "hobbi.html" 
+        href: "./html/hobbi.html" 
     },
     {
-
         title: "Спорт",
-        href: "sport.html",
+        href: "./html/sport.html",
         target: "_blank"
     },
     {
         title: "Работа",
-        href: "work.html"
+        href: "./html/work.html"
     },
     {
         title: "Контакты",
-        href: "contackts.html"
+        href: "./html/contackts.html"
     },
-
     {
         title: "API Таблица",
-        href: "api-table.html"
+        href: "./html/api-table.html"
     }
 ];
 

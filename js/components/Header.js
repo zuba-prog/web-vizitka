@@ -4,7 +4,13 @@ import { NAVIGATION_LINKS } from '../data/constants.js';
 export class Header {
     constructor(containerId = 'header-container') {
         this.container = document.getElementById(containerId);
-        this.currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+        const pathParts = window.location.pathname.split('/');
+        this.currentPage = pathParts.pop() || 'index.html';
+        
+        if (!this.currentPage.endsWith('.html')) {
+            this.currentPage = 'index.html';
+        }
     }
 
     render() {
