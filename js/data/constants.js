@@ -26,7 +26,7 @@ export const SKILLS = [
     {
         id: 1,
         title: "Репетитор",
-        image: "../img/images (1).png",
+        image: "./img/images (1).png",
         experience: "2 года",
         level: "😄",
         tags: ["образование", "математика"] 
@@ -34,7 +34,7 @@ export const SKILLS = [
     {
         id: 2,
         title: "HTML",
-        image: "../img/images.png",
+        image: "./img/images.png",
         experience: "менее 1 года",
         level: "🙂",
         tags: ["frontend", "web"]
@@ -42,7 +42,7 @@ export const SKILLS = [
     {
         id: 3,
         title: "C#",
-        image: "../img/Logo-csharp.webp",
+        image: "./img/Logo-csharp.webp",
         experience: "менее 1 года",
         level: "😗",
         tags: ["backend", "games"]
@@ -50,7 +50,7 @@ export const SKILLS = [
     {
         id: 4,
         title: "Python",
-        image: "../img/python.png",
+        image: "./img/python.png",
         experience: "примерно 2 года",
         level: "😁",
         tags: ["backend", "scripts", "ai"]
@@ -58,7 +58,7 @@ export const SKILLS = [
     {
         id: 5,
         title: "CSS",
-        image: "../img/css3.png",
+        image: "./img/css3.png",
         experience: "менее 1 года",
         level: "😗",
         tags: ["frontend", "design"]
