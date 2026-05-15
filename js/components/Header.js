@@ -4,7 +4,8 @@ import { NAVIGATION_LINKS } from '../data/constants.js';
 export class Header {
     constructor(containerId = 'header-container') {
         this.container = document.getElementById(containerId);
-    
+        
+
         const pathParts = window.location.pathname.split('/');
         this.currentPage = pathParts.pop() || 'index.html';
         
@@ -14,11 +15,19 @@ export class Header {
     }
 
     render() {
+        
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        const repoName = isGitHubPages ? `/${window.location.pathname.split('/')[1]}/` : '/';
+
         const navItemsHTML = NAVIGATION_LINKS.map(({ href, title, target = '_self' }) => {
-            const isActive = this.currentPage === href ? 'class="active"' : '';
+            const fileName = href.replace('./', '');
+            
+            const correctHref = `${repoName}${fileName}`;
+
+            const isActive = this.currentPage === fileName ? 'class="active"' : '';
             const targetAttr = target === '_blank' ? 'target="_blank"' : '';
             
-            return `<li><a href="${href}" ${targetAttr} ${isActive}>${title}</a></li>`;
+            return `<li><a href="${correctHref}" ${targetAttr} ${isActive}>${title}</a></li>`;
         }).join('');
 
         return `
